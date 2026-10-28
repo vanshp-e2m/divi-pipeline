@@ -1,0 +1,14 @@
+{
+  "name": "f2d-local",
+  "owner": {
+    "name": "figma2divi"
+  },
+  "plugins": [
+    {
+      "name": "figma2divi",
+      "source": "./",
+      "description": "Figma -> Divi 4 compiler with Planner, full QA suite and three-pass repair loop."
+    }
+  ],
+  "description": "Local marketplace for the figma2divi Figma -> Divi 4 pipeline."
+}

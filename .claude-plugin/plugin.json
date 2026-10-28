@@ -1,0 +1,16 @@
+{
+  "name": "figma2divi",
+  "version": "0.3.1",
+  "description": "Figma IR -> native Divi 4 page: deterministic compiler (DEV Connect responsive ladder), draft deploy, objective functional checks and agent-judged QA (f2d-qa), with a /figma2divi:start command that asks for the export, token and OS and runs everything.",
+  "author": {
+    "name": "figma2divi"
+  },
+  "license": "UNLICENSED",
+  "keywords": [
+    "figma",
+    "divi",
+    "wordpress",
+    "qa",
+    "visual-regression"
+  ]
+}

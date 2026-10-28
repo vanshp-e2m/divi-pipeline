@@ -1,0 +1,293 @@
+{
+  "at": "2026-10-22T05:49:56.686Z",
+  "threshold": 0.85,
+  "crops": [
+    "Frame 212",
+    "Component 21",
+    "Frame 231",
+    "Services",
+    "Frame 27",
+    "Frame 252",
+    "Frame 248",
+    "Component 47",
+    "Frame 254",
+    "Frame 28",
+    "Frame 258",
+    "Frame 267",
+    "Section - 13. FINAL CTA"
+  ],
+  "current": {
+    "k1": 0.05,
+    "weights": {
+      "ssim": 0.45,
+      "pixel": 0.25,
+      "edge": 0.15,
+      "color": 0.15
+    },
+    "rows": [
+      {
+        "case": "identical",
+        "expect": "noise",
+        "rank": 0,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0,
+        "mean": 1,
+        "min": 1,
+        "max": 1
+      },
+      {
+        "case": "shift 1px",
+        "expect": "noise",
+        "rank": 1,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0.064,
+        "mean": 0.9614,
+        "min": 0.9239,
+        "max": 0.9834
+      },
+      {
+        "case": "blur r1 (antialiasing / font hinting)",
+        "expect": "noise",
+        "rank": 1,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0.054,
+        "mean": 0.9851,
+        "min": 0.9729,
+        "max": 0.9928
+      },
+      {
+        "case": "tint +6 (colour profile)",
+        "expect": "noise",
+        "rank": 1,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0,
+        "mean": 0.9624,
+        "min": 0.898,
+        "max": 0.9993
+      },
+      {
+        "case": "shift 4px",
+        "expect": "borderline",
+        "rank": 2,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0.128,
+        "mean": 0.8699,
+        "min": 0.7315,
+        "max": 0.9299
+      },
+      {
+        "case": "tint +40 (wrong colour)",
+        "expect": "defect",
+        "rank": 3,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 1,
+        "mean": 0.7434,
+        "min": 0.6538,
+        "max": 0.8476
+      },
+      {
+        "case": "shift 16px",
+        "expect": "defect",
+        "rank": 3,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0.225,
+        "mean": 0.7413,
+        "min": 0.6022,
+        "max": 0.8268
+      },
+      {
+        "case": "missing content block (30% of crop, densest area)",
+        "expect": "defect",
+        "rank": 3,
+        "n": 9,
+        "skipped": [
+          "Services",
+          "Component 47",
+          "Frame 28",
+          "Section - 13. FINAL CTA"
+        ],
+        "changedMean": 0.121,
+        "mean": 0.8037,
+        "min": 0.7265,
+        "max": 0.8556
+      },
+      {
+        "case": "blur r4 (wrong image res)",
+        "expect": "borderline",
+        "rank": 2,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0.13,
+        "mean": 0.9211,
+        "min": 0.8651,
+        "max": 0.9531
+      },
+      {
+        "case": "blank page",
+        "expect": "defect",
+        "rank": 4,
+        "n": 13,
+        "skipped": [],
+        "changedMean": 0.838,
+        "mean": 0.3408,
+        "min": 0.0068,
+        "max": 0.7752
+      }
+    ],
+    "checks": {
+      "monotonic": true,
+      "noisePass": true,
+      "defectFail": false
+    },
+    "margin": -0.0056
+  },
+  "candidates": 45,
+  "validCandidates": 6,
+  "selected": {
+    "k1": 0.05,
+    "weights": {
+      "ssim": 0.3,
+      "pixel": 0.25,
+      "edge": 0.3,
+      "color": 0.15
+    },
+    "margin": 0.002
+  },
+  "weights": {
+    "ssim": 0.3,
+    "pixel": 0.25,
+    "edge": 0.3,
+    "color": 0.15
+  },
+  "k1": 0.05,
+  "rows": [
+    {
+      "case": "identical",
+      "expect": "noise",
+      "rank": 0,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0,
+      "mean": 1,
+      "min": 1,
+      "max": 1
+    },
+    {
+      "case": "shift 1px",
+      "expect": "noise",
+      "rank": 1,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0.064,
+      "mean": 0.9685,
+      "min": 0.9411,
+      "max": 0.9878
+    },
+    {
+      "case": "blur r1 (antialiasing / font hinting)",
+      "expect": "noise",
+      "rank": 1,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0.054,
+      "mean": 0.9848,
+      "min": 0.9704,
+      "max": 0.9932
+    },
+    {
+      "case": "tint +6 (colour profile)",
+      "expect": "noise",
+      "rank": 1,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0,
+      "mean": 0.9703,
+      "min": 0.8967,
+      "max": 0.9994
+    },
+    {
+      "case": "shift 4px",
+      "expect": "borderline",
+      "rank": 2,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0.128,
+      "mean": 0.9007,
+      "min": 0.8009,
+      "max": 0.9496
+    },
+    {
+      "case": "tint +40 (wrong colour)",
+      "expect": "defect",
+      "rank": 3,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 1,
+      "mean": 0.7626,
+      "min": 0.6737,
+      "max": 0.848
+    },
+    {
+      "case": "shift 16px",
+      "expect": "defect",
+      "rank": 3,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0.225,
+      "mean": 0.7202,
+      "min": 0.638,
+      "max": 0.7736
+    },
+    {
+      "case": "missing content block (30% of crop, densest area)",
+      "expect": "defect",
+      "rank": 3,
+      "n": 9,
+      "skipped": [
+        "Services",
+        "Component 47",
+        "Frame 28",
+        "Section - 13. FINAL CTA"
+      ],
+      "changedMean": 0.121,
+      "mean": 0.7606,
+      "min": 0.7092,
+      "max": 0.8042
+    },
+    {
+      "case": "blur r4 (wrong image res)",
+      "expect": "borderline",
+      "rank": 2,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0.13,
+      "mean": 0.9303,
+      "min": 0.8845,
+      "max": 0.958
+    },
+    {
+      "case": "blank page",
+      "expect": "defect",
+      "rank": 4,
+      "n": 13,
+      "skipped": [],
+      "changedMean": 0.838,
+      "mean": 0.2815,
+      "min": 0.0062,
+      "max": 0.6456
+    }
+  ],
+  "checks": {
+    "monotonic": true,
+    "noisePass": true,
+    "defectFail": true
+  },
+  "valid": true
+}
